@@ -1,0 +1,22 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.container{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.posts > div{
+	font-size: 20px;
+}
+
+.glyphicon-thumbs-up{
+	cursor: pointer;
+}
