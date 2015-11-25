@@ -210,10 +210,10 @@ app.config([
 		})
 		.state('login',{
 			url:'/login',
-			templateUrl:'login.html',
+			templateUrl:'/login.html',
 			controller:'AuthCtrl',
-			onEnter: ['$scope', 'auth', function($scope, auth){
-				if (auth.isLoggedIn) {
+			onEnter: ['$state', 'auth', function($state, auth){
+				if (auth.isLoggedIn()) {
 					$state.go('home');
 				};
 			}]

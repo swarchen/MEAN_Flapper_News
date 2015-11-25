@@ -107,7 +107,6 @@ router.post('/register', function(req, res, next){
 	if(!req.body.username || !req.body.password){
 		return res.status(400).json({message: 'Please fill out all field!!'});
 	};
-	console.log(req.body.username);
 	var user = new User();
 	user.username = req.body.username;
 	user.setPassword(req.body.password);
